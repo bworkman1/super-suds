@@ -21,9 +21,10 @@ class About_us extends CI_Controller {
 	public function index()
 	{
 		$arrData = [
-			'title' 		=> 'About Us',
-			'description' 	=> '',
-			'keywords' 		=> '',
+			'title' 		=> 'About Us | Super Suds Pressure Washing',
+			'description' 	=> 'At Super Suds, we understand that having a beautiful outdoor space brings so much happiness to everyone. We\'re family-owned and specialize in Soft Washing services.',
+			'keywords' 		=> 'About Super Suds',
+			'image'			=> 'super-suds-about-us.webp',
 		];
 
 		$this->load->model('Navbar_model');

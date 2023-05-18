@@ -1,4 +1,3 @@
-
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
 	<div class="container py-5 mb-0">
 		<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
@@ -29,16 +28,17 @@
 					attractive to potential buyers if you decide to sell in the future.</p>
 			</div>
 			<div class="col-md-6">
-				<img src="<?php echo base_url('assets/img/house-wash-like-new.jpg'); ?>" class="img-fluid border-2">
+				<?php $this->load->view('components/before-after-slider.php', $before_afters); ?>
 			</div>
 		</div>
+
 		<br>
 		<hr>
 			<h1 class="text-primary text-lg-center">Contact Us: 740-722-8889</h1>
 		<hr>
 
 		<?php $this->load->view('components/our-process-2'); ?>
-
+		<hr>
 		<h3>We offer a comprehensive range of pressure washing services for your home’s exterior, including:</h3>
 		<p class="mt-0">House Washing: Our house washing service removes dirt, grime, and other buildup from your home’s exterior,
 			restoring its appearance and protecting its integrity. Roof Washing: Our roof washing service removes mold,

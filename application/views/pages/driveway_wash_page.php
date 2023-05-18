@@ -23,18 +23,18 @@
 				<p class="m-0">Dirt, debris, and other hazards on driveways can create a slip-and-fall risk for
 					pedestrians. Regular driveway cleaning can help to prevent accidents and protect you from potential
 					liability.</p>
-				<h3 class="mt-2">Promote Health:</h3>
-				<p class="m-0">Dirty and stained surfaces can harbor harmful bacteria, mold, and other allergens that can
-					compromise your family’s health. Pressure washing eliminates these contaminants, promoting a healthier
-					living environment.</p>
-				<h3 class="mt-2">Maintenance:</h3>
-				<p class="m-0">Driveways are exposed to the elements year-round, which can cause wear and tear. Regular
-					cleaning can help to remove harmful buildup and extend the lifespan of your driveway.</p>
 			</div>
 			<div class="col-md-6">
-				<img src="<?php echo base_url('assets/img/driveway-cleaning-mount-vernon-ohio.jpg'); ?>" class="img-fluid border-2">
+				<?php $this->load->view('components/before-after-slider.php', $before_afters); ?>
 			</div>
 		</div>
+		<h3 class="mt-2">Promote Health:</h3>
+		<p class="m-0">Dirty and stained surfaces can harbor harmful bacteria, mold, and other allergens that can
+			compromise your family’s health. Pressure washing eliminates these contaminants, promoting a healthier
+			living environment.</p>
+		<h3 class="mt-2">Maintenance:</h3>
+		<p class="m-0">Driveways are exposed to the elements year-round, which can cause wear and tear. Regular
+			cleaning can help to remove harmful buildup and extend the lifespan of your driveway.</p>
 		<br>
 		<hr>
 		<h1 class="text-primary text-lg-center">Contact Us: 740-722-8889</h1>

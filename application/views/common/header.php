@@ -10,12 +10,11 @@
 	<meta content="<?php echo $description; ?>" name="description">
 	<meta name="robots" content="index, follow">
 
-	<meta property="og:type" content="company" />
+	<meta property="og:type" content="<?php echo COMPANY_NAME; ?>>" />
 	<meta property="og:title" content="<?php echo isset($title) ? $title : 'Super Suds Pressure Washing' ?>" />
 	<meta property="og:description" content="<?php echo $description; ?>" />
-	<meta property="og:image" content="LINK TO THE IMAGE FILE" />
-	<meta property="og:url" content="PERMALINK" />
-	<meta property="og:site_name" content="<?php echo isset($image) ? base_url(sprintf('assets/img/%s', $image)) : base_url('assets/img/og-image-super-suds-pressure-washing-image.jpg'); ?>" />
+	<meta property="og:image" content="<?php echo base_url(sprintf('assets\img\%s\%s', META_IMAGE_DIRECTORY, $image)); ?>" />
+	<meta property="og:url" content="<?php echo current_url(); ?>" />
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url('assets/img/favicon/apple-touch-icon.png'); ?>">

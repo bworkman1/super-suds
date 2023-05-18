@@ -23,7 +23,8 @@ class Home extends CI_Controller {
 		$arrData = [
 			'title' 		=> 'Professional Pressure Washing | Super Suds of Mount Vernon, Ohio',
 			'description' 	=> 'Get your property looking its best with Super Suds Pressure Washing! Our experienced team in Madison, WI specializes in soft washing homes, garages, fences, decks, driveways and sidewalks. Effective and efficient pressure washing without the risk of damage. Schedule your service today!',
-			'keywords' 		=> 'Pressure washing, ',
+			'keywords' 		=> 'Pressure washing',
+			'image'			=> ''
 		];
 
 		$this->load->model('Navbar_model');
@@ -31,18 +32,18 @@ class Home extends CI_Controller {
 
 		$arrData['before_afters'] = [
 			[
-				'before_image_name' => 'driveway-2-before.jpg',
-				'after_image_name'	=> 'driveway-2-after.jpg',
+				'before_image_name' => 'driveway-2-before.webp',
+				'after_image_name'	=> 'driveway-2-after.webp',
 				'column_size' 		=> 4
 			],
 			[
-				'before_image_name' => 'driveway-before.jpg',
-				'after_image_name'	=> 'driveway-after.jpg',
+				'before_image_name' => 'house-wash-johnstown-ohio-before.webp',
+				'after_image_name'	=> 'house-wash-johnstown-ohio-after.webp',
 				'column_size' 		=> 4
 			],
 			[
-				'before_image_name' => 'deck-cleaning-mount-vernon-ohio-before.jpg',
-				'after_image_name'	=> 'deck-cleaning-mount-vernon-ohio-after.jpg',
+				'before_image_name' => 'deck-cleaning-mount-vernon-ohio-before.webp',
+				'after_image_name'	=> 'deck-cleaning-mount-vernon-ohio-after.webp',
 				'column_size' 		=> 4
 			],
 		];

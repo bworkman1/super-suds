@@ -26,11 +26,10 @@ class Services extends CI_Controller {
 	public function house_soft_wash()
 	{
 		$arrPage = [
-			'title' 		=> 'Soft House Washing Services Near Mount Vernon, OH | Super Suds',
-			'description' 	=> 'Get your home clean and looking fresh with Super Suds\' soft house washing service in 
-			and around Mount Vernon, OH. Our team will help make sure your walls, windows and more are looking the best 
-			they can. Contact us today to get started!',
-			'keywords' 		=> 'Soft Wash, House Wash, Pressure Washing, Pressure Washing Ohio',
+			'title' 		=> 'House Soft Wash | Super Suds Pressure Washing Services',
+			'description' 	=> 'Located in Mount Vernon, OH, Sunny Pressure Washing is a commercial &amp; residential power washing company providing professional pressure washing. House Washing',
+			'keywords' 		=> 'Soft Wash, House Wash, Pressure Washing, Pressure Washing, Mount Vernon, Ohio',
+			'image' 		=> 'house-wash.jpg'
 		];
 
 		$this->load->model('Services_model');
@@ -45,6 +44,14 @@ class Services extends CI_Controller {
 		$this->load->view('common/navbar', $arrPage);
 
 		$arrPage['arrServices'] = $this->Services_model->getServicesSettings();
+
+		$arrPage['before_afters'] = [
+			[
+				'before_image_name' => 'house-wash-johnstown-ohio-after.webp',
+				'after_image_name'	=> 'house-wash-johnstown-ohio-before.webp',
+				'column_size' 		=> 12
+			]
+		];
 
 		$this->load->model('Blog_model');
 		$arrPage['latest_blog_entries'] = $this->Blog_model->latestBlogEntries(3);
@@ -58,9 +65,10 @@ class Services extends CI_Controller {
 	public function driveway_wash()
 	{
 		$arrPage = [
-			'title' 		=> 'Easy Online Pressure Washing Quote',
-			'description' 	=> '',
-			'keywords' 		=> '',
+			'title' 		=> 'Driveway Cleaning | Super Suds Pressure Washing Services',
+			'description' 	=> 'Revive the look of your driveway with Super Suds pressure washing services. We use the best tools to clean your driveway surfaces and leave it looking like new.',
+			'keywords' 		=> 'Driveway Wash, Driveway Cleaning, Pressure Washing, Power Washing',
+			'image' 		=> 'driveway-wash.jpg'
 		];
 
 		$this->load->model('Services_model');
@@ -79,6 +87,14 @@ class Services extends CI_Controller {
 		$this->load->model('Blog_model');
 		$arrPage['latest_blog_entries'] = $this->Blog_model->latestBlogEntries(3);
 
+		$arrPage['before_afters'] = [
+			[
+				'before_image_name' => 'house-wash-johnstown-ohio-after.webp',
+				'after_image_name'	=> 'house-wash-johnstown-ohio-before.webp',
+				'column_size' 		=> 12
+			]
+		];
+
 		$this->load->view('pages/driveway_wash_page', $arrPage);
 
 		$arrPage['js'] = [];
@@ -88,9 +104,10 @@ class Services extends CI_Controller {
 	public function sidewalk_wash()
 	{
 		$arrPage = [
-			'title' 		=> 'Easy Online Pressure Washing Quote',
-			'description' 	=> '',
-			'keywords' 		=> '',
+			'title' 		=> 'Sidewalk Cleaning | Super Suds Pressure Washing Services',
+			'description' 	=> 'Get your sidewalks sparkling clean with help from Super Suds! We can make your sidewalk look pristine in no time. Find out why so many local business and homeowners trust us for their cleaning needs.',
+			'keywords' 		=> 'Sidewalk Cleaning, Sidewalk Wash, Pressure Wash, Mount Vernon, Ohio',
+			'image' 		=> 'sidewalk-wash.jpg'
 		];
 
 		$this->load->model('Services_model');
@@ -116,9 +133,10 @@ class Services extends CI_Controller {
 	public function fence_wash()
 	{
 		$arrPage = [
-			'title' 		=> 'Easy Online Pressure Washing Quote',
-			'description' 	=> '',
-			'keywords' 		=> '',
+			'title' 		=> 'Fence Wash | Super Suds Pressure Washing Services',
+			'description' 	=> 'Let Super Suds take care of all your fence cleaning needs! We offer pressure washing services to help you keep your fence looking its best. ',
+			'keywords' 		=> 'Fence wash, fence cleaning, fence pressure washing, fence power washing',
+			'image' 		=> ''
 		];
 
 		$this->load->model('Services_model');
@@ -144,9 +162,10 @@ class Services extends CI_Controller {
 	public function deck_patio_paver_cleanings()
 	{
 		$arrPage = [
-			'title' 		=> 'Easy Online Pressure Washing Quote',
-			'description' 	=> '',
-			'keywords' 		=> '',
+			'title' 		=> 'Deck, Patio &amp;  Pavers | Super Suds Pressure Washing Services',
+			'description' 	=> 'Need your your deck, patio, pavers, or other outdoor surfaces cleaned? Super Suds is here to help. We use top-notch equipment and techniques to clean a variety of surfaces.',
+			'keywords' 		=> 'Deck, Patio &amp; Pavers Pressure Washing',
+			'image' 		=> ''
 		];
 
 		$this->load->model('Services_model');

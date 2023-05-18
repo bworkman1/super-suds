@@ -21,7 +21,7 @@
 					</div>
 			</div>
 			<div class="col-md-4">
-				<img src="<?php echo base_url('assets/img/its_me_brian_with_super_suds.jpg'); ?>" class="img-fluid" alt="Brian Workman Owner of Super Suds Pressure Washing">
+				<img src="<?php echo base_url('assets/img/its_me_brian_with_super_suds.webp'); ?>" class="img-fluid" alt="Brian Workman Owner of Super Suds Pressure Washing">
 			</div>
 		</div>
 		<hr>

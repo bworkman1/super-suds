@@ -9,7 +9,7 @@
 			<div class="col-lg-4 col-md-6 footer-about">
 				<div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-black p-4">
 					<a href="index.html" class="navbar-brand">
-						<img src="<?php echo base_url('assets/img/super-suds-pressure-washing-logo.png'); ?>" class="img-fluid">
+						<img src="<?php echo base_url('assets/img/super-suds-pressure-washing-logo.png'); ?>" class="img-fluid" alt="Super Suds Pressure Washing Logo">
 					</a>
 					<p class="mt-3 mb-4">We are committed to delivering exceptional results and strive to build long-lasting
 						relationships with our clients based on trust, reliability, and professionalism.</p>

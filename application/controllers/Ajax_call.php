@@ -75,8 +75,8 @@ class Ajax_call extends CI_Controller
 				'protocol' 	=> 'sendmail',
 				'smtp_host' => 'ssl://smtp.googlemail.com',
 				'smtp_port' => 465,
-				'smtp_user' => 'brian@supersuds.net',
-				'smtp_pass' => '%xJ2$RNO2HqE',
+				'smtp_user' => GOOGLE_EMAIL,
+				'smtp_pass' => GOOGLE_PASS,
 				'mailtype'  => 'html',
 				'charset'   => 'iso-8859-1'
 			];

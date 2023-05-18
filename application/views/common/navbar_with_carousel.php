@@ -2,9 +2,9 @@
 <div class="container-fluid position-relative p-0">
 	<nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
 		<a href="<?php echo base_url(); ?>" class="navbar-brand p-0">
-			<img src="<?php echo base_url('assets/img/super-suds-pressure-washing-logo.png'); ?>" class="img-fluid" id="header-logo">
+			<img src="<?php echo base_url('assets/img/super-suds-pressure-washing-logo.png'); ?>" class="img-fluid" id="header-logo" alt="Super Suds Pressure Washing Logo">
 		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" title="Mobile Navigation Button">
 			<span class="fa fa-bars"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarCollapse">
@@ -30,7 +30,7 @@
 				}
 				?>
 			</div>
-			<button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+			<button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal" title="Search Site Button">
 				<i class="fa fa-search"></i>
 			</button>
 <!--			<a href="--><?php //echo base_url('online-quote'); ?><!--" class="btn btn-primary py-2 px-4 ms-3">Easy Online Quote</a>-->
@@ -62,12 +62,12 @@
 				</div>
 			</div>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+		<button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" title="Previous Carousel Image"
 				data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
 		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+		<button class="carousel-control-next" type="button" data-bs-target="#header-carousel" title="Next Carousel Image"
 				data-bs-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Next</span>

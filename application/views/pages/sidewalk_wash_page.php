@@ -26,14 +26,14 @@
 				<p class="m-0">Dirt, debris, and other hazards on sidewalks can create a slip-and-fall risk for
 					pedestrians. Regular sidewalk cleaning can help to prevent accidents and protect you from potential
 					liability.</p>
-				<h3>Extend life span:</h3>
-				<p class="m-0">Sidewalks are exposed to the elements year-round, which can cause wear and tear. Regular
-					cleaning can help to remove harmful buildup and extend the lifespan of your sidewalks.</p>
 			</div>
 			<div class="col-md-6">
-				<img src="<?php echo base_url('assets/img/driveway-cleaning-mount-vernon-ohio.jpg'); ?>" class="img-fluid border-2">
+				<img src="<?php echo base_url(sprintf('assets\img\%s\%s', META_IMAGE_DIRECTORY, $image)); ?>" class="img-fluid border-2">
 			</div>
 		</div>
+		<h3>Extend life span:</h3>
+		<p class="m-0">Sidewalks are exposed to the elements year-round, which can cause wear and tear. Regular
+			cleaning can help to remove harmful buildup and extend the lifespan of your sidewalks.</p>
 		<br>
 		<hr>
 		<h1 class="text-primary text-lg-center">Contact Us: 740-722-8889</h1>

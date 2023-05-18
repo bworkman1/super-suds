@@ -21,9 +21,10 @@ class Contact_us extends CI_Controller
 	public function index()
 	{
 		$arrData = [
-			'title' 		=> 'Super Suds Pressure Washing',
-			'description' 	=> '',
-			'keywords' 		=> '',
+			'title' 		=> 'Contact Us | Super Suds Pressure Washing',
+			'description' 	=> 'Get a pressure washing quote from Super Suds in Mount Vernon, OH. We provide accurate quotes within 24 hours based on public information available online.',
+			'keywords' 		=> 'Contact Us',
+			'image'			=> 'super-suds-about-us.webp',
 		];
 
 		$this->load->model('Navbar_model');

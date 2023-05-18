@@ -21,9 +21,10 @@ class Blog extends CI_Controller {
 	public function index()
 	{
 		$arrData = [
-			'title' 		=> 'Our Blog',
-			'description' 	=> 'Super Suds Pressure Washing Blog, check back frequently for updates',
-			'keywords' 		=> 'Super Suds Pressure Washing Blog',
+			'title' 		=> 'Our Blog | Super Suds Pressure Washing',
+			'description' 	=> 'Get all the tips and tricks you need to make your home sparkle with Super Suds. From cleaning hacks to product reviews, our blog will help you get the job done right. Learn more today!',
+			'keywords' 		=> 'Our Blog, DIY Pressure Washing Tips',
+			'image'			=> 'super-suds-about-us.webp',
 		];
 
 		$this->load->model('Navbar_model');
