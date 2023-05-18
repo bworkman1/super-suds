@@ -85,7 +85,7 @@
 						<div class="link-animated d-flex flex-column justify-content-start">
 							<?php
 								foreach($arrLatestPost as $arrPost) {
-									echo '<a class="text-light mb-2" href="' . base_url(sprintf('blog/%s', $arrPost['url'])) . '"><i class="bi bi-arrow-right text-primary me-2"></i>'.$arrPost['title'].'</a>';
+									echo '<a class="text-light mb-2" href="' . base_url(sprintf('blog/%s', $arrPost->url)) . '"><i class="bi bi-arrow-right text-primary me-2"></i>'.$arrPost->title.'</a>';
 								}
 							?>
 						</div>

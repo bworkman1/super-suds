@@ -1,11 +1,13 @@
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
 	<div class="container py-5">
 		<div class="section-title text-center position-relative pb-3 mb-5 mx-auto">
-			<h5 class="fw-bold text-primary text-uppercase"><?php echo $requested_post['category']; ?></h5>
-			<h1 class="mb-0"><?php echo $requested_post['title']; ?></h1>
+			<h5 class="fw-bold text-primary text-uppercase"><?php echo $requested_post->category; ?></h5>
+			<h1 class="mb-0"><?php echo $requested_post->title; ?></h1>
 		</div>
 		<div class="row">
-			<p>Spring is the season of new beginnings, but it’s also the season of… well, let’s just say “interesting” weather.
+			<p>
+				<img src="<?php echo base_url(sprintf('%s/%s', FEATURED_IMAGE_PATH, $requested_post->image)); ?>" class="float-end py5" style="max-width: 300px">
+				Spring is the season of new beginnings, but it’s also the season of… well, let’s just say “interesting” weather.
 				With spring comes rain, pollen, and, of course, those lovely little bugs that like to make your home their own
 				personal vacation spot. Don’t let your home be the destination for these unwanted visitors! Pressure washing can
 				blast away those bug hotels, so they can find a new place to call home – like your neighbor’s house! (Just kidding,

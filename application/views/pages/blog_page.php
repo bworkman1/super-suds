@@ -1,6 +1,5 @@
 <?php $this->load->view('components/search-modal'); ?>
-<br>
-<br>
+
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
 	<div class="container py-5">
 		<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
@@ -35,8 +34,8 @@
 
 				$this->pagination->initialize($config);
 
-				$latest_blog_entries = array_reverse($latest_blog_entries);
-				foreach($latest_blog_entries as $arrBlogEntry)
+				$blog_entries = array_reverse($blog_entries);
+				foreach($blog_entries as $arrBlogEntry)
 				{
 					$this->load->view('components/blog-post', $arrBlogEntry);
 				}

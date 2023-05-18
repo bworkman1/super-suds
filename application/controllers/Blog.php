@@ -31,16 +31,27 @@ class Blog extends CI_Controller {
 		$arrData['navbar'] = $this->Navbar_model->getNavbarLinks();
 
 		$this->load->model('Blog_model');
-		$arrData['latest_blog_entries'] = $this->Blog_model->getBlogEntries(0);
+		$arrData['blog_entries'] 		= $this->Blog_model->getBlogEntries(0);
+		$arrData['latest_blog_entries'] = $this->Blog_model->latestBlogEntries(3);
 		$arrData['total_entries'] 		= $this->Blog_model->getTotalEntries();
 		$arrData['requested_post']      = $this->Blog_model->getRequestedPost($this->uri->segment(2, 0));
+
+
+
+		if(!empty($arrData['requested_post']))
+		{
+			$arrData['title'] 		= $arrData['requested_post']->title;
+			$arrData['description'] = $arrData['requested_post']->meta_description;
+			$arrData['keywords'] 	= $arrData['requested_post']->meta_keywords;
+			$arrData['image'] 		= $arrData['requested_post']->meta_image;
+		}
 
 		$this->load->view('common/header', $arrData);
 		$this->load->view('common/top_bar', $arrData);
 		$this->load->view('common/navbar');
 
 		if(!empty($arrData['requested_post'])) {
-			$this->load->view(sprintf('posts/%s', $arrData['requested_post']['post']), $arrData);
+			$this->load->view(sprintf('posts/%s', $arrData['requested_post']->post), $arrData);
 		} else {
 			$this->load->view('pages/blog_page', $arrData);
 		}
@@ -62,6 +73,7 @@ class Blog extends CI_Controller {
 		$arrData['navbar'] = $this->Navbar_model->getNavbarLinks();
 
 		$this->load->model('Blog_model');
+
 		$arrData['latest_blog_entries'] = $this->Blog_model->getBlogEntries($intStart);
 		$arrData['total_entries'] 		= $this->Blog_model->getTotalEntries();
 		$arrData['current_page'] 		= $this->Blog_model->getTotalEntries();
