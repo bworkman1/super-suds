@@ -11,7 +11,7 @@
 					echo '<div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">';
 						echo '<div class="blog-item bg-light rounded overflow-hidden">';
 							echo '<div class="blog-img position-relative overflow-hidden">';
-								echo '<img class="img-fluid" src="'. $arrBlogEntry['image'] .'" alt="' . $arrBlogEntry['title'] . '">';
+								echo '<img class="img-fluid" src="'. base_url(sprintf('%s/%s',  FEATURED_IMAGE_PATH, $arrBlogEntry['image'])) .'" alt="' . $arrBlogEntry['title'] . '">';
 								echo '<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="' . base_url(sprintf('blog/%s', $arrBlogEntry['url'])) . '">' . $arrBlogEntry['category'] . '</a>';
 							echo '</div>';
 							echo '<div class="p-4">';

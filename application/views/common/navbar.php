@@ -38,3 +38,5 @@
 	</nav>
 </div>
 <!-- Navbar End -->
+
+<div id="content">

@@ -1,5 +1,3 @@
-<br>
-<br>
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
 	<div class="container py-5">
 		<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">

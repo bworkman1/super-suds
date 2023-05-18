@@ -173,6 +173,9 @@ h6,
     .navbar-dark .navbar-brand h1 {
         color: var(--primary);
     }
+	#content {
+		margin-top: -105px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -699,3 +702,4 @@ input[type="range"]::-webkit-slider-thumb {
 #search-results .list-group-item a {
 	color: #fff;
 }
+

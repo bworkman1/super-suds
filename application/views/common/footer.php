@@ -1,3 +1,5 @@
+</div>
+
 <!-- Footer Start -->
 <?php
 	$objBlog 		= new Blog_model();

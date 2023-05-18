@@ -56,3 +56,4 @@ $route['translate_uri_dashes'] = true;
 
 
 $route['blog/(:any)'] = 'Blog';
+$route['404_override'] = 'My404Page';

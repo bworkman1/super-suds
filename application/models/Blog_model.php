@@ -10,6 +10,9 @@ class Blog_model extends CI_Model
 
 	public function __construct()
 	{
+		$this->load->database();
+		$objQuery = $this->db->query('SELECT * FROM posts');
+
 		$this->Post = [
 			[
 				'url' 		=> 'best-time-to-clean-your-homes-exterior-and-driveway',
@@ -17,7 +20,7 @@ class Blog_model extends CI_Model
 				'title' 	=> 'Spring Cleaning – Best time to clean your homes exterior and driveway',
 				'date' 		=> '2023-03-07',
 				'post' 		=> 'best-time-to-clean-your-homes-exterior-and-driveway',
-				'image'     => base_url(sprintf('%sbest-time-to-clean-your-homes-exterior-and-driveway.webp', self::FEATURED_IMAGE_PATH)),
+				'image'     => 'best-time-to-clean-your-homes-exterior-and-driveway.webp',
 				'blurb'     => 'Spring is the season of new beginnings, but it’s also the season of… well, let’s just say “interesting” weather. With spring comes rain, pollen, and,',
 				'category' 	=> 'Spring Cleaning'
 			],
@@ -27,7 +30,7 @@ class Blog_model extends CI_Model
 				'title' 	=> 'Get Your Home Ready for Spring with Professional Pressure Washing Services',
 				'date' 		=> '2023-03-12',
 				'post' 		=> 'get-your-home-ready-for-spring-with-professional-pressure-washing-services',
-				'image'     => base_url(sprintf('%sget-your-home-ready-for-spring-with-professional-pressure-washing-services.webp', self::FEATURED_IMAGE_PATH)),
+				'image'     => 'get-your-home-ready-for-spring-with-professional-pressure-washing-services.webp',
 				'blurb'     => 'Spring is the perfect time to give your home a fresh start, and what better way to do that than with a thorough spring cleaning?',
 				'category' 	=> 'Seasonal'
 			],
@@ -37,7 +40,7 @@ class Blog_model extends CI_Model
 				'title' 	=> 'The importance of regular home washing and driveway cleaning',
 				'date' 		=> '2023-03-12',
 				'post' 		=> 'the-importance-of-regular-home-washing-and-driveway-cleaning-protecting-your-investment',
-				'image'     => base_url(sprintf('%sthe-importance-of-regular-home-washing-and-driveway-cleaning-protecting-your-investment.webp', self::FEATURED_IMAGE_PATH)),
+				'image'     => 'the-importance-of-regular-home-washing-and-driveway-cleaning-protecting-your-investment.webp',
 				'blurb'     => 'Spring is the perfect time to give your home a fresh start, and what better way to do that than with a thorough spring cleaning?',
 				'category' 	=> 'Seasonal'
 			],
@@ -47,7 +50,7 @@ class Blog_model extends CI_Model
 				'title' 	=> 'Driveway and Concrete Cleaning',
 				'date' 		=> '2023-03-22',
 				'post' 		=> 'why-super-suds-for-driveway-and-concrete-cleaning',
-				'image'     => base_url(sprintf('%swhy-super-suds-for-driveway-and-concrete-cleaning.webp', self::FEATURED_IMAGE_PATH)),
+				'image'     => 'why-super-suds-for-driveway-and-concrete-cleaning.webp',
 				'blurb'     => 'At Super Suds, we take pride in providing top-notch services to our clients. Our team of experts is skilled and experienced in all aspects of driveway',
 				'category' 	=> 'Job Well Done'
 			],
@@ -57,7 +60,7 @@ class Blog_model extends CI_Model
 				'title' 	=> 'From Grime to Shine In No Time – 5 Reasons Why You Need Professional Pressure Washer',
 				'date' 		=> '2023-04-01',
 				'post' 		=> 'from-grime-to-shine-in-no-time–reasons-why-you-need-professional-pressure-washer',
-				'image'     => base_url(sprintf('%sgrim-to-shine-5-reasons-why-you-need-a-pressure-washer.webp', self::FEATURED_IMAGE_PATH)),
+				'image'     => 'grim-to-shine-5-reasons-why-you-need-a-pressure-washer.webp',
 				'blurb'     => 'Are your home’s exterior walls looking a little worse for wear? Have you been neglecting the maintenance needs of your precious abode? If so, do no',
 				'category' 	=> 'Spring Cleaning'
 			],

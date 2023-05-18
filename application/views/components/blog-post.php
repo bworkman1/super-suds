@@ -1,7 +1,7 @@
 <div class="col-lg-4 col-md-6 wow slideInUp mb-3" data-wow-delay="0.3s">
 	<div class="blog-item bg-light rounded overflow-hidden">
 		<div class="blog-img position-relative overflow-hidden">
-			<img class="img-fluid" src="<?php echo $image; ?>" alt="">
+			<img class="img-fluid" src="<?php echo base_url(sprintf('%s/%s', FEATURED_IMAGE_PATH, $image)); ?>" alt="">
 			<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-2 py-1 px-1" href="<?php echo base_url(sprintf('blog/%s', $url)); ?>"><?php echo $category; ?></a>
 		</div>
 		<div class="p-4">
