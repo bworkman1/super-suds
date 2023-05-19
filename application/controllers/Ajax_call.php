@@ -87,14 +87,6 @@ class Ajax_call extends CI_Controller
 
 			$this->email->subject('Contact Form | Quote Request');
 
-			$arrData = [
-				'name' 			=> $_POST['name'],
-				'email' 		=> $_POST['email'],
-				'address' 		=> $_POST['address'],
-				'phone' 		=> $_POST['phone'],
-				'description' 	=> $_POST['description']
-			];
-
 			$email = $this->load->view('forms/contact-form', [], true);
 
 			$this->email->message($email);
