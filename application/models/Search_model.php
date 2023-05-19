@@ -50,12 +50,12 @@ class Search_model extends CI_Model
 
 		foreach($arrBlogPosts as $arrBlogPost)
 		{
-			if (strpos(strtolower($arrBlogPost['title']),  strtolower($this->SEARCH_TERM)) !== false)
+			if (strpos(strtolower($arrBlogPost->title),  strtolower($this->SEARCH_TERM)) !== false)
 			{
 				$this->SEARCH_RESULTS[] = [
-					'title' => $arrBlogPost['title'],
-					'url' 	=> base_url(sprintf('blog/%s', $arrBlogPost['url']), BASE_URL_PROTOCOL),
-					'image' => $arrBlogPost['image']
+					'title' => $arrBlogPost->title,
+					'url' 	=> base_url(sprintf('blog/%s', $arrBlogPost->url), BASE_URL_PROTOCOL),
+					'image' => $arrBlogPost->image
 				];
 			}
 		}
