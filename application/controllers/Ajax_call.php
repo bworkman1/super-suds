@@ -48,12 +48,12 @@ class Ajax_call extends CI_Controller
 		$this->load->library('email');
 
 		if(!$this->input->is_ajax_request()) {
-			$arrResponse['message'] = 'request type not allowed';
+			$arrResponse['errors'] = 'request type not allowed';
 			return $this->returnRequest($arrResponse);
 		}
 
 		if($intPageCheck != $this->input->post('check')) {
-			$arrResponse['message'] = 'Verification check failed';
+			$arrResponse['errors'] = 'Verification check failed';
 			return $this->returnRequest($arrResponse);
 		}
 
@@ -103,7 +103,7 @@ class Ajax_call extends CI_Controller
 				$this->session->set_userdata('contact_page_xss', $intCheck);
 				$arrResponse['check'] = $intCheck;
 			} else {
-				$arrResponse['message'] = '<div class="alert alert-danger"><i class="fa fa-times"></i> Emailed failed to send, please call us or email us directly.</div>';
+				$arrResponse['errors'] = '<div class="alert alert-danger"><i class="fa fa-times"></i> Emailed failed to send, please call us or email us directly.</div>';
 			}
 		}
 

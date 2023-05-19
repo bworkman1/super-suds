@@ -167,7 +167,7 @@
 				if(objResults.success) {
 					document.getElementById("contact-page").reset();
 					$('#check_input').val(objResults.check);
-					$('#call-feedback').after().html(objResults.message);
+					$('#call-feedback').after(objResults.message);
 				} else {
 					$('#call-feedback').html(objResults.errors);
 				}
