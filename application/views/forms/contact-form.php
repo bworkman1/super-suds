@@ -1,6 +1,6 @@
 <?php
 
-$strName = 		isset($_POST['name']) 			? htmlspecialchars($_POST['name']) 	: '';
+$name = 		isset($_POST['name']) 			? htmlspecialchars($_POST['name']) 	: '';
 $email = 		isset($_POST['email']) 			? htmlspecialchars($_POST['email']) 		: '';
 $phone = 		isset($_POST['phone']) 			? htmlspecialchars($_POST['phone']) 		: '';
 $phone = 		isset($_POST['address']) 		? htmlspecialchars($_POST['address']) 		: '';
@@ -15,7 +15,7 @@ $details = 		isset($_POST['description']) 	? htmlspecialchars($_POST['descriptio
 
 	<div style="border:1px solid #444">
 		<div style="width:28%; float:left; padding: 5px"><b>Name:</b></div>
-		<div style="width:68%; float:left; padding: 5px"><?php echo $strName; ?></div>
+		<div style="width:68%; float:left; padding: 5px"><?php echo $name; ?></div>
 		<div style="clear:both;"></div>
 
 		<div style="width:28%; float:left; padding: 5px"><b>Email:</b></div>
