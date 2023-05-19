@@ -3,6 +3,8 @@
 
 	var base_url = $('#base_url').val();
 
+	$('#contact-page #phone_input').mask('(000) 000-0000');
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -149,7 +151,8 @@
 		let phone 		= $('#contact-page #phone_input').val();
 		let description = $('#contact-page #description_input').val();
 		let check 		= $('#contact-page #check_input').val();
-
+		$('#call-feedback').html('');
+		$('.alert-success').remove();
 		$.post(base_url + 'ajax_call/submit-contact-form',
 			{
 				"name": name,
@@ -164,9 +167,9 @@
 				if(objResults.success) {
 					document.getElementById("contact-page").reset();
 					$('#check_input').val(objResults.check);
-					$('#call-feedback').val(objResults.message);
+					$('#call-feedback').after().html(objResults.message);
 				} else {
-					console.log(objResults);
+					$('#call-feedback').html(objResults.message);
 				}
 			}
 		);

@@ -57,6 +57,8 @@ class Ajax_call extends CI_Controller
 			return $this->returnRequest($arrResponse);
 		}
 
+		$_POST['phone'] = preg_replace("/[^0-9]/", "", $_POST['phone']);
+
 		$this->form_validation->set_rules('name', 			'Name', 					'trim|required|min_length[6]|max_length[50]');
 		$this->form_validation->set_rules('email', 			'Email', 					'trim|required|valid_email|min_length[8]|max_length[50]');
 		$this->form_validation->set_rules('address', 		'Address', 					'trim|required|min_length[8]|max_length[50]');
@@ -66,7 +68,7 @@ class Ajax_call extends CI_Controller
 		if ($this->form_validation->run() == FALSE)
 		{
 			$arrResponse['message'] = 'Request failed';
-			$arrResponse['errors'] = validation_errors();
+			$arrResponse['errors'] = validation_errors('<div class="text-danger"><i class="fas fa-exclamation-triangle"></i> ', '</div>');
 		}
 		else
 		{
@@ -77,7 +79,9 @@ class Ajax_call extends CI_Controller
 				'smtp_user' => GOOGLE_EMAIL,
 				'smtp_pass' => GOOGLE_PASS,
 				'mailtype'  => 'html',
-				'charset'   => 'iso-8859-1'
+				'charset'   => 'iso-8859-1',
+				'starttls'  => true,
+				'newline'   => "\r\n"
 			];
 
 			$this->email->initialize($config);

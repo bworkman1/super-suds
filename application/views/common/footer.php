@@ -127,6 +127,7 @@
 <script src="<?php echo base_url('assets/lib/waypoints/waypoints.min.js'); ?>"></script>
 <script src="<?php echo base_url('assets/lib/counterup/counterup.min.js'); ?>"></script>
 <script src="<?php echo base_url('assets/lib/owlcarousel/owl.carousel.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/jquery.mask.js'); ?>"></script>
 
 <!-- Bootstrap JS -->
 <script src="<?php echo base_url('assets/js/bootstrap.bundle.min.js'); ?>"></script>
