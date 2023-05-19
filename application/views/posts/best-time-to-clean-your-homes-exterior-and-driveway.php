@@ -6,7 +6,7 @@
 		</div>
 		<div class="row">
 			<p>
-				<img src="<?php echo base_url(sprintf('%s/%s', FEATURED_IMAGE_PATH, $requested_post->image)); ?>" class="float-end py5" style="max-width: 300px">
+				<img src="<?php echo base_url(sprintf('%s/%s', FEATURED_IMAGE_PATH, $requested_post->image), BASE_URL_PROTOCOL); ?>" class="float-end py5" style="max-width: 300px">
 				Spring is the season of new beginnings, but it’s also the season of… well, let’s just say “interesting” weather.
 				With spring comes rain, pollen, and, of course, those lovely little bugs that like to make your home their own
 				personal vacation spot. Don’t let your home be the destination for these unwanted visitors! Pressure washing can

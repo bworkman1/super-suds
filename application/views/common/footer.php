@@ -11,7 +11,7 @@
 			<div class="col-lg-4 col-md-6 footer-about">
 				<div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-black p-4">
 					<a href="index.html" class="navbar-brand">
-						<img src="<?php echo base_url('assets/img/super-suds-pressure-washing-logo.png'); ?>" class="img-fluid" alt="Super Suds Pressure Washing Logo">
+						<img src="<?php echo base_url('assets/img/super-suds-pressure-washing-logo.png', BASE_URL_PROTOCOL); ?>" class="img-fluid" alt="Super Suds Pressure Washing Logo">
 					</a>
 					<p class="mt-3 mb-4">We are committed to delivering exceptional results and strive to build long-lasting
 						relationships with our clients based on trust, reliability, and professionalism.</p>
@@ -71,11 +71,11 @@
 							<h3 class="text-light mb-0">Quick Links</h3>
 						</div>
 						<div class="link-animated d-flex flex-column justify-content-start">
-							<a class="text-light mb-2" href="<?php echo base_url(); ?>"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-							<a class="text-light mb-2" href="<?php echo base_url('about-us'); ?>"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-							<a class="text-light mb-2" href="<?php echo base_url('services'); ?>"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-							<a class="text-light mb-2" href="<?php echo base_url('blog'); ?>"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-							<a class="text-light " href="<?php echo base_url('contact-us'); ?>"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+							<a class="text-light mb-2" href="<?php echo base_url('', BASE_URL_PROTOCOL); ?>"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+							<a class="text-light mb-2" href="<?php echo base_url('about-us', BASE_URL_PROTOCOL); ?>"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+							<a class="text-light mb-2" href="<?php echo base_url('services', BASE_URL_PROTOCOL); ?>"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+							<a class="text-light mb-2" href="<?php echo base_url('blog', BASE_URL_PROTOCOL); ?>"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+							<a class="text-light " href="<?php echo base_url('contact-us', BASE_URL_PROTOCOL); ?>"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
@@ -85,7 +85,7 @@
 						<div class="link-animated d-flex flex-column justify-content-start">
 							<?php
 								foreach($arrLatestPost as $arrPost) {
-									echo '<a class="text-light mb-2" href="' . base_url(sprintf('blog/%s', $arrPost->url)) . '"><i class="bi bi-arrow-right text-primary me-2"></i>'.$arrPost->title.'</a>';
+									echo '<a class="text-light mb-2" href="' . base_url(sprintf('blog/%s', $arrPost->url), BASE_URL_PROTOCOL) . '"><i class="bi bi-arrow-right text-primary me-2"></i>'.$arrPost->title.'</a>';
 								}
 							?>
 						</div>
@@ -100,7 +100,7 @@
 		<div class="row justify-content-end">
 			<div class="col-lg-8 col-md-6">
 				<div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-					<p class="mb-0">&copy; <a class="text-white border-bottom" href="<?php echo base_url(); ?>"><?php echo COMPANY_NAME; ?></a> - All Rights Reserved.
+					<p class="mb-0">&copy; <a class="text-white border-bottom" href="<?php echo base_url('', BASE_URL_PROTOCOL); ?>"><?php echo COMPANY_NAME; ?></a> - All Rights Reserved.
 				</div>
 			</div>
 		</div>
@@ -112,7 +112,7 @@
 <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-<input type="hidden" id="base_url" name="base_url" value="<?php echo base_url(); ?>">
+<input type="hidden" id="base_url" name="base_url" value="<?php echo base_url('', BASE_URL_PROTOCOL); ?>">
 
 <!-- Full Screen Search Start -->
 <?php $this->load->view('components/search-modal'); ?>

@@ -19,7 +19,7 @@
 						<li class="list-group-item" style="padding-left: 0; padding-right:0"><b>Longevity:</b> Regular cleaning and maintenance can extend the life of your driveway and concrete surfaces. Removing dirt and debris can prevent damage and deterioration over time.</li>
 						<li class="list-group-item" style="padding-left: 0; padding-right:0"><b>Improved Health:</b> A dirty driveway or concrete surface can harbor bacteria, mold, and other allergens that can affect your health. Regular cleaning can remove these harmful substances and improve the overall air quality of your property.</li>
 					</ul>
-				<a href="<?php echo base_url('contact-us'); ?>" class="btn btn-primary">Request a Quote</a>
+				<a href="<?php echo base_url('contact-us', BASE_URL_PROTOCOL); ?>" class="btn btn-primary">Request a Quote</a>
 				</div>
 
 				<div class="col-md-6">

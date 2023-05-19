@@ -15,11 +15,11 @@
 					on surfaces without compromising structure integrity either way - let us help make your visions for
 					Mount Vernon become reality one stunning property transformation at a time!</p>
 				<div class="text-center">
-						<a href="<?php echo base_url('contact-us'); ?>" class="btn btn-primary">Request a Quote</a>
+						<a href="<?php echo base_url('contact-us', BASE_URL_PROTOCOL); ?>" class="btn btn-primary">Request a Quote</a>
 					</div>
 			</div>
 			<div class="col-md-4">
-				<img src="<?php echo base_url('assets/img/its_me_brian_with_super_suds.webp'); ?>" class="img-fluid" alt="Brian Workman Owner of Super Suds Pressure Washing">
+				<img src="<?php echo base_url('assets/img/its_me_brian_with_super_suds.webp', BASE_URL_PROTOCOL); ?>" class="img-fluid" alt="Brian Workman Owner of Super Suds Pressure Washing">
 			</div>
 		</div>
 		<hr>

@@ -28,7 +28,7 @@
 					liability.</p>
 			</div>
 			<div class="col-md-6">
-				<img src="<?php echo base_url(sprintf('assets\img\%s\%s', META_IMAGE_DIRECTORY, $image)); ?>" class="img-fluid border-2">
+				<img src="<?php echo base_url(sprintf('assets\img\%s\%s', META_IMAGE_DIRECTORY, $image), BASE_URL_PROTOCOL); ?>" class="img-fluid border-2">
 			</div>
 		</div>
 		<h3>Extend life span:</h3>

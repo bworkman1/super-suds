@@ -25,7 +25,7 @@
 					attractive to potential buyers if you decide to sell in the future.</p>
 			</div>
 			<div class="col-md-6">
-				<img src="<?php echo base_url('assets/img/fence-wash-mount-vernon-ohio.jpg'); ?>" class="img-fluid border-2">
+				<img src="<?php echo base_url('assets/img/fence-wash-mount-vernon-ohio.jpg', BASE_URL_PROTOCOL); ?>" class="img-fluid border-2">
 			</div>
 		</div>
 		<br>

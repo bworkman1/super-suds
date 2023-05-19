@@ -13,14 +13,14 @@
 	<meta property="og:type" content="<?php echo COMPANY_NAME; ?>>" />
 	<meta property="og:title" content="<?php echo isset($title) ? $title : 'Super Suds Pressure Washing' ?>" />
 	<meta property="og:description" content="<?php echo $description; ?>" />
-	<meta property="og:image" content="<?php echo base_url(sprintf('assets\img\%s\%s', META_IMAGE_DIRECTORY, $image)); ?>" />
+	<meta property="og:image" content="<?php echo base_url(sprintf('assets\img\%s\%s', META_IMAGE_DIRECTORY, $image), BASE_URL_PROTOCOL); ?>" />
 	<meta property="og:url" content="<?php echo current_url(); ?>" />
 
 	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url('assets/img/favicon/apple-touch-icon.png'); ?>">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('assets/img/favicon/favicon-32x32.png'); ?>">
-	<link rel="icon" type="image/png" sizes="16x16" href=" echo base_url('assets/img/favicon/favicon-16x16.png'); ?>">
-	<link rel="manifest" href="<?php echo base_url('assets/img/favicon/site.webmanifest'); ?>">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url('assets/img/favicon/apple-touch-icon.png', BASE_URL_PROTOCOL); ?>">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('assets/img/favicon/favicon-32x32.png', BASE_URL_PROTOCOL); ?>">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('assets/img/favicon/favicon-16x16.png', BASE_URL_PROTOCOL); ?>">
+	<link rel="manifest" href="<?php echo base_url('assets/img/favicon/site.webmanifest', BASE_URL_PROTOCOL); ?>">
 
 	<!-- Google Web Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,22 +32,22 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
 	<!-- Libraries Stylesheet -->
-	<link href="<?php echo base_url('assets/lib/owlcarousel/assets/owl.carousel.min.css'); ?>" rel="stylesheet">
-	<link href="<?php echo base_url('assets/lib/animate/animate.min.css'); ?>" rel="stylesheet">
+	<link href="<?php echo base_url('assets/lib/owlcarousel/assets/owl.carousel.min.css', BASE_URL_PROTOCOL); ?>" rel="stylesheet">
+	<link href="<?php echo base_url('assets/lib/animate/animate.min.css', BASE_URL_PROTOCOL); ?>" rel="stylesheet">
 
 	<!-- Customized Bootstrap Stylesheet -->
-	<link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet">
+	<link href="<?php echo base_url('assets/css/bootstrap.min.css', BASE_URL_PROTOCOL); ?>" rel="stylesheet">
 
 	<?php
 		if(isset($css)) {
 			foreach($css as $stylesheet) {
-				echo '<link href="' . base_url($stylesheet) . '" rel="stylesheet">';
+				echo '<link href="' . base_url($stylesheet, BASE_URL_PROTOCOL) . '" rel="stylesheet">';
 			}
 		}
 	?>
 
 	<!-- Template Stylesheet -->
-	<link href="<?php echo base_url('assets/css/style.css'); ?>" rel="stylesheet">
+	<link href="<?php echo base_url('assets/css/style.css', BASE_URL_PROTOCOL); ?>" rel="stylesheet">
 </head>
 
 <body>

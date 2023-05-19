@@ -1,8 +1,8 @@
 <!-- Navbar Start -->
 <div class="container-fluid position-relative p-0">
 	<nav id="short-nav" class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0 skip">
-		<a href="<?php echo base_url(); ?>" class="navbar-brand p-0">
-			<img src="<?php echo base_url('assets/img/super-suds-pressure-washing-logo.png'); ?>" class="img-fluid" id="header-logo" alt="Super Suds Pressure Washing Logo">
+		<a href="<?php echo base_url('', BASE_URL_PROTOCOL); ?>" class="navbar-brand p-0">
+			<img src="<?php echo base_url('assets/img/super-suds-pressure-washing-logo.png', BASE_URL_PROTOCOL); ?>" class="img-fluid" id="header-logo" alt="Super Suds Pressure Washing Logo">
 		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" title="Toggle Navigation Menu">
 			<span class="fa fa-bars"></span>
@@ -20,12 +20,12 @@
 									foreach($arrLink['dropdown'] as $arrSubLinks)
 									{
 										$strClass = ($arrSubLinks['is_active']) ? 'active' : '';
-										echo '<a href="' . base_url($arrSubLinks['url']) . '" class="dropdown-item ' . $strClass . '">' . $arrSubLinks['title'] . '</a>';
+										echo '<a href="' . base_url($arrSubLinks['url'], BASE_URL_PROTOCOL) . '" class="dropdown-item ' . $strClass . '">' . $arrSubLinks['title'] . '</a>';
 									}
 								echo '</div>';
 							echo '</div>';
 						} else {
-							echo '<a href="' . base_url($arrLink['url']) . '" class="nav-item nav-link ' . $strClass . '">' . $arrLink['title'] . '</a>';
+							echo '<a href="' . base_url($arrLink['url'], BASE_URL_PROTOCOL) . '" class="nav-item nav-link ' . $strClass . '">' . $arrLink['title'] . '</a>';
 						}
 					}
 				?>

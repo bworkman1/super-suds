@@ -9,7 +9,7 @@
 		<div class="row">
 
 			<?php
-				$config['base_url'] 	= base_url('blog/pages');
+				$config['base_url'] 	= base_url('blog/pages', BASE_URL_PROTOCOL);
 				$config['total_rows'] 	= $total_entries;
 				$config['per_page'] 	= Blog_model::PER_PAGE;
 

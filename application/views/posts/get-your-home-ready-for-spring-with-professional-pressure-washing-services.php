@@ -17,7 +17,7 @@
 					walk on. That’s why it’s important to have them professionally cleaned.</p>
 			</div>
 			<div class="col-md-4">
-				<img src="<?php echo base_url(sprintf('%s/%s', FEATURED_IMAGE_PATH, $requested_post->image)); ?>" class="img-fluid" alt="<?php echo $requested_post->title; ?>">
+				<img src="<?php echo base_url(sprintf('%s/%s', FEATURED_IMAGE_PATH, $requested_post->image), BASE_URL_PROTOCOL); ?>" class="img-fluid" alt="<?php echo $requested_post->title; ?>">
 			</div>
 
 			<p>Super Suds specializes in professional pressure washing services for your home and commercial property.
@@ -45,7 +45,7 @@
 
 		<div class="row">
 			<div class="col-sm-4">
-				<img src="<?php echo base_url('assets/img/deck-cleaning-removing-mold-mildew-and-organics.jpg'); ?>" class="img-fluid" alt="Remove dirt, grime, and stains from your home's exterior">
+				<img src="<?php echo base_url('assets/img/deck-cleaning-removing-mold-mildew-and-organics.jpg', BASE_URL_PROTOCOL); ?>" class="img-fluid" alt="Remove dirt, grime, and stains from your home's exterior">
 			</div>
 			<div class="col-sm-8">
 				<p>A professional house washing service can remove dirt, grime, and stains from your home’s exterior,

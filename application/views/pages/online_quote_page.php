@@ -164,7 +164,7 @@
 
 				<br>
 				<h4>Examples</h4>
-				<img src="<?php echo base_url('assets/img/help-with-measuring-distances.jpg'); ?>" class="img-fluid" alt="Shows the user how to use google maps to help measure distance">
+				<img src="<?php echo base_url('assets/img/help-with-measuring-distances.jpg', BASE_URL_PROTOCOL); ?>" class="img-fluid" alt="Shows the user how to use google maps to help measure distance">
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

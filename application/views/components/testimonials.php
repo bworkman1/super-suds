@@ -7,7 +7,7 @@
 		<div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
 			<div class="testimonial-item bg-light my-4">
 				<div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-					<img class="img-fluid rounded" src="<?php echo base_url('assets/img/testimonial-newark-ohio-patty.jpg'); ?>" style="width: 60px; height: 60px;" >
+					<img class="img-fluid rounded" src="<?php echo base_url('assets/img/testimonial-newark-ohio-patty.jpg', BASE_URL_PROTOCOL); ?>" style="width: 60px; height: 60px;" >
 					<div class="ps-4">
 						<h4 class="text-primary mb-1">Patty</h4>
 						<small class="text-uppercase">Newark, OH</small>
@@ -21,7 +21,7 @@
 			</div>
 			<div class="testimonial-item bg-light my-4">
 				<div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-					<img class="img-fluid rounded" src="<?php echo base_url('assets/img/testimonial-mount-vernon-ohio-pressure-washing-service.jpg'); ?>" style="width: 60px; height: 60px;" >
+					<img class="img-fluid rounded" src="<?php echo base_url('assets/img/testimonial-mount-vernon-ohio-pressure-washing-service.jpg', BASE_URL_PROTOCOL); ?>" style="width: 60px; height: 60px;" >
 					<div class="ps-4">
 						<h4 class="text-primary mb-1">Steve</h4>
 						<small class="text-uppercase">Mount Vernon</small>
@@ -35,7 +35,7 @@
 			</div>
 			<div class="testimonial-item bg-light my-4">
 				<div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-					<img class="img-fluid rounded" src="<?php echo base_url('assets/img/testimonial-andrea-mount-vernon.jpg'); ?>" style="width: 60px; height: 60px;" >
+					<img class="img-fluid rounded" src="<?php echo base_url('assets/img/testimonial-andrea-mount-vernon.jpg', BASE_URL_PROTOCOL); ?>" style="width: 60px; height: 60px;" >
 					<div class="ps-4">
 						<h4 class="text-primary mb-1">Andrea</h4>
 						<small class="text-uppercase">Mount Vernon</small>

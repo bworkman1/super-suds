@@ -11,7 +11,7 @@ $details = 		isset($_POST['description']) 	? htmlspecialchars($_POST['descriptio
 <body style="background-color: #cecece;">
 <div style="max-width: 800px; margin: 0 auto; background: #fff; padding:5px;">
 	<h1><?php echo COMPANY_NAME ?> Quote Request</h1>
-	<p>A potential customer has filled out the form located at <a target="_blank" href="<?php echo base_url('/contact-us/'); ?>"><?php echo base_url('/contact-us/'); ?></a> and the details are below.</p>
+	<p>A potential customer has filled out the form located at <a target="_blank" href="<?php echo base_url('/contact-us/', BASE_URL_PROTOCOL); ?>"><?php echo base_url('/contact-us/', BASE_URL_PROTOCOL); ?></a> and the details are below.</p>
 
 	<div style="border:1px solid #444">
 		<div style="width:28%; float:left; padding: 5px"><b>First Name:</b></div>
@@ -36,7 +36,7 @@ $details = 		isset($_POST['description']) 	? htmlspecialchars($_POST['descriptio
 
 		<?php if(!empty($file_name)) { ?>
 			<div style="width:28%; float:left; padding: 5px"><b>Upload Image:</b></div>
-			<div style="width:68%; float:left; padding: 5px"><a href="<?php echo base_url('assets/images/user_file_uploads/' . $file_name); ?>" target="_blank">View Upload</a></div>
+			<div style="width:68%; float:left; padding: 5px"><a href="<?php echo base_url('assets/images/user_file_uploads/' . $file_name, BASE_URL_PROTOCOL); ?>" target="_blank">View Upload</a></div>
 			<div style="clear:both;"></div>
 		<?php } ?>
 	</div>

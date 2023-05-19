@@ -42,7 +42,7 @@ class Online_quote extends CI_Controller {
 		$this->load->view('pages/online_quote_page', $arrData);
 
 		$arrData['js'] = [
-			base_url('assets/js/online-quote.js')
+			base_url('assets/js/online-quote.js', BASE_URL_PROTOCOL)
 		];
 
 		$this->load->view('common/footer', $arrData);

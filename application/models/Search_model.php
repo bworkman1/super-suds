@@ -36,8 +36,8 @@ class Search_model extends CI_Model
 				{
 					$this->SEARCH_RESULTS[] = [
 						'title' => $arrNavbarLink['title'],
-						'url' 	=> base_url($arrNavbarLink['url']),
-						'image' => base_url('assets/img/super-suds-pressure-washing-logo.png')
+						'url' 	=> base_url($arrNavbarLink['url'], BASE_URL_PROTOCOL),
+						'image' => base_url('assets/img/super-suds-pressure-washing-logo.png', BASE_URL_PROTOCOL)
 					];
 				}
 			}
@@ -54,7 +54,7 @@ class Search_model extends CI_Model
 			{
 				$this->SEARCH_RESULTS[] = [
 					'title' => $arrBlogPost['title'],
-					'url' 	=> base_url(sprintf('blog/%s', $arrBlogPost['url'])),
+					'url' 	=> base_url(sprintf('blog/%s', $arrBlogPost['url']), BASE_URL_PROTOCOL),
 					'image' => $arrBlogPost['image']
 				];
 			}
