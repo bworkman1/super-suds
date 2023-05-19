@@ -150,7 +150,7 @@
 		let description = $('#contact-page #description_input').val();
 		let check 		= $('#contact-page #check_input').val();
 
-		$.post(base_url + '/ajax_call/submit-contact-form',
+		$.post(base_url + 'ajax_call/submit-contact-form',
 			{
 				"name": name,
 				"email": email,
