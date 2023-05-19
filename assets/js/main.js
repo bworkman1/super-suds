@@ -169,7 +169,7 @@
 					$('#check_input').val(objResults.check);
 					$('#call-feedback').after().html(objResults.message);
 				} else {
-					$('#call-feedback').html(objResults.message);
+					$('#call-feedback').html(objResults.errors);
 				}
 			}
 		);
