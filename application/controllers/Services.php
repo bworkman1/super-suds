@@ -184,8 +184,8 @@ class Services extends CI_Controller {
 
 		$arrPage['before_afters'] = [
 			[
-				'before_image_name' => 'deck-cleaning-mount-vernon-ohio-before.jpg',
-				'after_image_name'	=> 'deck-cleaning-mount-vernon-ohio-after.jpg',
+				'before_image_name' => 'deck-cleaning-mount-vernon-ohio-before.webp',
+				'after_image_name'	=> 'deck-cleaning-mount-vernon-ohio-after.webp',
 				'column_size' 		=> 12
 			]
 		];

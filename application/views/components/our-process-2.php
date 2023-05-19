@@ -6,7 +6,6 @@
 					<h5 class="fw-bold text-primary text-uppercase">Our Process</h5>
 					<h1 class="mb-0">We follow a four-step process</h1>
 				</div>
-				<p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
 
 				<ul class="list-group">
 					<li class="list-group-item d-flex justify-content-between align-items-start">
@@ -60,3 +59,5 @@
 		</div>
 	</div>
 </div>
+<br>
+<br>
