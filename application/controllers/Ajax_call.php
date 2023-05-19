@@ -83,9 +83,17 @@ class Ajax_call extends CI_Controller
 			$this->email->initialize($config);
 
 			$this->email->from('brian@supersuds.net', 'No Reply | Super Suds');
-			$this->email->to('brian@supersuds.net');
+			$this->email->to(CONTACT_FORM_EMAIL_TO);
 
 			$this->email->subject('Contact Form | Quote Request');
+
+			$arrData = [
+				'name' 			=> $_POST['name'],
+				'email' 		=> $_POST['email'],
+				'address' 		=> $_POST['address'],
+				'phone' 		=> $_POST['phone'],
+				'description' 	=> $_POST['description']
+			];
 
 			$email = $this->load->view('forms/contact-form', [], true);
 
