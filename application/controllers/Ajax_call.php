@@ -10,7 +10,6 @@ class Ajax_call extends CI_Controller
 
 	public function search()
 	{
-
 		$arrResponse = [
 			'success' => false,
 			'search_results' => []

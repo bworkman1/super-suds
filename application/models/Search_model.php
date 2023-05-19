@@ -54,8 +54,8 @@ class Search_model extends CI_Model
 			{
 				$this->SEARCH_RESULTS[] = [
 					'title' => $arrBlogPost->title,
-					'url' 	=> base_url(sprintf('blog/%s', $arrBlogPost->url), BASE_URL_PROTOCOL),
-					'image' => $arrBlogPost->image
+					'url' 	=> base_url(sprintf('blog/%s', 	$arrBlogPost->url), BASE_URL_PROTOCOL),
+					'image' => base_url(sprintf('%s/%s', 		FEATURED_IMAGE_PATH, $arrBlogPost->image), BASE_URL_PROTOCOL)
 				];
 			}
 		}
