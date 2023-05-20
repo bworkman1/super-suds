@@ -156,15 +156,7 @@ h6,
     color: var(--primary) !important;
     border-color: var(--primary) !important;
 }
-.elementor-background-video-hosted {
-	height: 1070.44px;
-}
 
-@media (max-width: 841px) {
-	.elementor-background-video-hosted {
-		width: 350px !important;
-	}
-}
 @media (max-width: 991px) {
     .sticky-top.navbar-dark {
         position: relative;
