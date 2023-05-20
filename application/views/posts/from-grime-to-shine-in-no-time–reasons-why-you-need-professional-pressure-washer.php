@@ -32,7 +32,7 @@
 
 		<hr>
 		<h3 class="text-primary text-center">Call us today to see how we can help!</h3>
-		<h2 class="text-center"><?php echo CONTACT_PHONE; ?></h2>
+		<h2 class="text-center"><a href="tel:<?php echo CONTACT_PHONE; ?>"><?php echo CONTACT_PHONE; ?></a></h2>
 		<hr>
 
 		<h3>Keep Up With Regular Maintenance – Pressure washing helps keep your home looking its best and prevent

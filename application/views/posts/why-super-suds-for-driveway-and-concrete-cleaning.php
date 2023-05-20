@@ -35,7 +35,7 @@
 			</div>
 
 			<hr>
-				<h1 class="text-primary text-lg-center">Contact Us: <?php echo CONTACT_PHONE; ?></h1>
+			<h1 class="text-primary text-lg-center">Contact Us: <a href="tel:<?php echo CONTACT_PHONE; ?>"><?php echo CONTACT_PHONE; ?></a></h1>
 			<hr>
 
 			<h3 class="text-primary p-0">What we offer</h3>
