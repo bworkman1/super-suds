@@ -162,7 +162,7 @@ h6,
 
 @media (max-width: 841px) {
 	.elementor-background-video-hosted {
-		width: 350px;
+		width: 350px !important;
 	}
 }
 @media (max-width: 991px) {
