@@ -156,6 +156,10 @@ h6,
     color: var(--primary) !important;
     border-color: var(--primary) !important;
 }
+.elementor-background-video-hosted {
+	height: 1070.44px;
+	width: 1903px;
+}
 
 @media (max-width: 841px) {
 	.elementor-background-video-hosted {
