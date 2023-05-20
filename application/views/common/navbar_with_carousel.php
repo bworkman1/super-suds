@@ -40,7 +40,7 @@
 	<div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="<?php echo base_url('assets/videos/pressure-washing-sidewalk.mov', BASE_URL_PROTOCOL); ?>" style="width: auto; height: 1070.44px;"></video>
+				<video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="<?php echo base_url('assets/videos/pressure-washing-sidewalk.mov', BASE_URL_PROTOCOL); ?>"></video>
 				<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 					<div class="p-3" style="max-width: 900px;">
 						<h5 class="text-white text-uppercase mb-3 animated slideInDown">Get Sparkle & Shine</h5>
@@ -51,7 +51,7 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="<?php echo base_url('assets/videos/pressure-washing-concrete.mov', BASE_URL_PROTOCOL); ?>" style="width: auto; height: 1070.44px;"></video>
+				<video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="<?php echo base_url('assets/videos/pressure-washing-concrete.mov', BASE_URL_PROTOCOL); ?>"></video>
 				<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 					<div class="p-3" style="max-width: 900px;">
 						<h5 class="text-white text-uppercase mb-3 animated slideInDown">Now Servicing The</h5>
