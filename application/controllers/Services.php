@@ -89,8 +89,8 @@ class Services extends CI_Controller {
 
 		$arrPage['before_afters'] = [
 			[
-				'before_image_name' => 'house-wash-johnstown-ohio-after.webp',
-				'after_image_name'	=> 'house-wash-johnstown-ohio-before.webp',
+				'before_image_name' => 'driveway-before.webp',
+				'after_image_name'	=> 'driveway-after.webp',
 				'column_size' 		=> 12
 			]
 		];
