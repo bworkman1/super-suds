@@ -30,7 +30,7 @@
 		</div>
 		<br>
 		<hr>
-		<h1 class="text-primary text-lg-center">Contact Us: 740-722-8889</h1>
+		<h1 class="text-primary text-lg-center">Contact Us: <a href="tel:<?php echo CONTACT_PHONE; ?>"><?php echo CONTACT_PHONE; ?></a></h1>
 		<hr>
 		<h3>We offer a comprehensive range of pressure washing services for your fence, including:</h3>
 		<p class="mt-0">Fence Washing: Our fence washing service removes dirt, grime, and other buildup from your home’s exterior,

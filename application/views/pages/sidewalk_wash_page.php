@@ -36,7 +36,7 @@
 			cleaning can help to remove harmful buildup and extend the lifespan of your sidewalks.</p>
 		<br>
 		<hr>
-		<h1 class="text-primary text-lg-center">Contact Us: 740-722-8889</h1>
+		<h1 class="text-primary text-lg-center">Contact Us: <a href="tel:<?php echo CONTACT_PHONE; ?>"><?php echo CONTACT_PHONE; ?></a></h1>
 		<hr>
 		<?php $this->load->view('components/our-process-2'); ?>
 		<h3>How Does Sidewalk Cleaning Work?</h3>

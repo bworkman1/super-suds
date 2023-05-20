@@ -31,7 +31,7 @@
 					</div>
 					<div class="ps-4">
 						<h5 class="mb-2">Call to ask any question</h5>
-						<h4 class="text-primary mb-0">740-722-8889</h4>
+						<h4 class="text-primary mb-0"><a href="tel:<?php echo CONTACT_PHONE; ?>"><?php echo CONTACT_PHONE; ?></a></h4>
 					</div>
 				</div>
 			</div>
